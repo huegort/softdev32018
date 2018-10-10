@@ -13,11 +13,15 @@ public class BookDao {
 	String url ="jdbc:mysql://localhost/its3";
 	String user = "root";
 	String password = "";
+	
+	
+	
 	private static Object init() {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 		} catch (ClassNotFoundException e) {
-			throw new RuntimeException();
+			System.out.println("whoops");
+			e.printStackTrace();
 		}
 		return null;
 	}
