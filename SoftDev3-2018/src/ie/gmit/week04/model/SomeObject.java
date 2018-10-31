@@ -2,7 +2,7 @@ package ie.gmit.week04.model;
 
 import java.util.Date;
 
-public class SomeObject {
+public class SomeObject  {
 	String text;
 	int number;
 	Date date;

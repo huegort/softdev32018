@@ -31,7 +31,7 @@ public class HTTPRequestServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		Enumeration<String> en = request.getHeaderNames();
 		response.setContentType("text/html");
-		response.getWriter().append("<html><body>");
+		response.getWriter().append("<html><body>hi");
 		while (en.hasMoreElements()) {
 			String headerName = en.nextElement();
 			response.getWriter().append(headerName+" :"+ request.getHeader(headerName) +"<br/>");
